@@ -32,7 +32,7 @@ class RoleController extends Controller
         $roles=new Role();
         $roles->intitule=$request->intitule;
         $roles->save();
-        return redirect()->route('role_index');
+        return redirect()->route('role.index');
     }
 
     /**
